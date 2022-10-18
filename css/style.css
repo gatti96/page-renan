@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap");
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Satisfy', cursive;*/
 .my-container {
   background-color: #1a1717;
   min-height: 100vh;
@@ -34,10 +37,117 @@
   }
 }
 
+.imagem-index:hover {
+  box-shadow: -10px -10px 20px gray;
+}
+
 .imagem-index img {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.text-title {
+  margin-top: 45px;
+  color: #fff;
+  font-size: 80px;
+  font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 645px) {
+  .text-title {
+    font-size: 65px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .text-title {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .text-title {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+.sub-title {
+  color: #fff;
+  margin-top: 60px;
+  font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 645px) {
+  .sub-title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .sub-title {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .sub-title {
+    font-size: 20px;
+  }
+}
+
+.bg-conteudo {
+  background-color: rgb(247, 241, 241);
+}
+
+.title-h3 {
+  color: #000;
+  font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+  background-color: rgb(181, 23, 23);
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+}
+@media screen and (max-width: 425px) {
+  .title-h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .title-h3 {
+    font-size: 20px;
+  }
+}
+
+.conteudo {
+  text-align: justify;
+  font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+  width: 1000px;
+  padding: 15px;
+  color: #000;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1250px) {
+  .conteudo {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 645px) {
+  .conteudo {
+    width: 85%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .conteudo {
+    width: 90%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .conteudo {
+    width: 90%;
+    font-size: 12px;
+  }
 }
 
 .image-logo {
