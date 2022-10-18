@@ -1,0 +1,73 @@
+.my-container {
+  background-color: #1a1717;
+  min-height: 100vh;
+}
+
+.section-index {
+  margin-top: 170px;
+  margin-bottom: 50px;
+}
+
+.imagem-index {
+  border-radius: 80%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .imagem-index {
+    width: 190px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .imagem-index {
+    width: 168px;
+    height: 168px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .imagem-index {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.imagem-index img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.image-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.bg-new {
+  background-color: rgb(181, 23, 23);
+}
+
+.footer-1 {
+  color: #000;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #1a1717;
+}
+
+/*# sourceMappingURL=style.css.map */

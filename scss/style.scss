@@ -1,0 +1,14 @@
+@import "./pages/index.scss";
+
+@import "./others/colors.scss";
+
+@import "./others/common.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: $background-color;
+}
