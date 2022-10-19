@@ -10,8 +10,13 @@ font-family: 'Satisfy', cursive;*/
 }
 
 .section-index {
-  margin-top: 170px;
+  margin-top: 110px;
   margin-bottom: 50px;
+  @media screen {
+    @media (max-width: 320px) {
+      margin-top: 80px;
+    }
+  }
 }
 
 .imagem-index {
@@ -46,7 +51,7 @@ font-family: 'Satisfy', cursive;*/
 }
 
 .text-title {
-  margin-top: 45px;
+  margin-top: 38px;
   color: #fff;
   font-size: 80px;
   font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
@@ -60,6 +65,7 @@ font-family: 'Satisfy', cursive;*/
       text-align: center;
     }
     @media (max-width: 320px) {
+      margin-top: 20px;
       font-size: 40px;
       text-align: center;
     }
@@ -67,7 +73,11 @@ font-family: 'Satisfy', cursive;*/
 }
 
 .sub-title {
+  border-right: 2px solid rgba(255, 255, 255, 0.75); //cursor da animação
+  white-space: nowrap; //não quebrar a linha na animação
+  overflow: hidden; //se não tem a largura vai esconder o que esta fora
   color: #fff;
+  width: 100%;
   margin-top: 60px;
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
   @media screen {
@@ -82,6 +92,33 @@ font-family: 'Satisfy', cursive;*/
     }
   }
 }
+
+.typing-animation {
+  animation: blinkCursor 500ms steps(40) normal;
+  animation: typing 3s steps(50) 2s normal both; //stesp() são a quantidade de quadros que vai quebrar, isso faz o cursor parecer estar digitando
+  animation-iteration-count: 2; //Quantas vezes repete
+}
+
+@keyframes typing {
+  //efeito para mover o cursor
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  //efeito piscar do cursor
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 .bg-conteudo {
   background-color: rgb(247, 241, 241);
 }
