@@ -3,6 +3,40 @@
   height: 60px;
 }
 
+.link-hover {
+  //para criar o efeito hover do risco
+  margin: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-block: 2px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+.link-hover:hover {
+  transform: scale(1.5); //cria efeito de aumentar
+}
+
+.link-hover::after {
+  //para criar o efeito hover do risco
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.link-hover:hover::after {
+  //para criar o efeito hover do risco
+  transform: scaleX(1);
+}
+
 .bg-new {
   background-color: rgb(181, 23, 23);
 }

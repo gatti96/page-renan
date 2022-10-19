@@ -94,7 +94,10 @@ font-family: 'Satisfy', cursive;*/
 }
 
 .typing-animation {
-  animation: blinkCursor 500ms steps(40) normal;
+  animation: blinkCursor 500ms steps(50) infinite normal;
+}
+
+.letra-piscando {
   animation: typing 3s steps(50) 2s normal both; //stesp() são a quantidade de quadros que vai quebrar, isso faz o cursor parecer estar digitando
   animation-iteration-count: 2; //Quantas vezes repete
 }
@@ -164,6 +167,58 @@ font-family: 'Satisfy', cursive;*/
     @media (max-width: 320px) {
       width: 90%;
       font-size: 12px;
+    }
+  }
+}
+
+.size-icone-black {
+  width: 50px;
+  height: 50px;
+  color: #000;
+  @media screen {
+    @media (max-width: 320px) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.link-social-media-index {
+  text-decoration: none;
+  font-size: 20px;
+  @media screen {
+    @media (max-width: 320px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.conteudo-redes-sociais {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-left: 300px;
+  padding: 15px;
+  width: 350px;
+  @media screen {
+    @media (max-width: 320px) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
+.text-socialMedia {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.social-media {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  @media screen {
+    @media (max-width: 320px) {
+      margin-bottom: 5px;
     }
   }
 }
