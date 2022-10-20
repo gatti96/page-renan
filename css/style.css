@@ -83,7 +83,7 @@ font-family: 'Satisfy', cursive;*/
   white-space: nowrap;
   overflow: hidden;
   color: #fff;
-  width: 100%;
+  width: 300px;
   margin-top: 60px;
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
 }
@@ -117,7 +117,7 @@ font-family: 'Satisfy', cursive;*/
     width: 0;
   }
   to {
-    width: 100%;
+    width: 300px;
   }
 }
 @keyframes blinkCursor {
@@ -185,6 +185,22 @@ font-family: 'Satisfy', cursive;*/
   }
 }
 
+#section-2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 100px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "item-1 item-2";
+}
+@media screen and (max-width: 768px) {
+  #section-2 {
+    margin-bottom: 40px;
+    grid-template-columns: 100%;
+    gap: 20px;
+    grid-template-areas: "item-1" "item-2";
+  }
+}
+
 .size-icone-black {
   width: 50px;
   height: 50px;
@@ -247,21 +263,23 @@ font-family: 'Satisfy', cursive;*/
   padding: 15px;
   width: 350px;
 }
+@media screen and (max-width: 1340px) {
+  .conteudo-redes-sociais {
+    margin-left: 80px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .conteudo-redes-sociais {
-    margin-left: 100px;
-    width: 40%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 768px) {
   .conteudo-redes-sociais {
-    margin-left: 40px;
     width: 50%;
   }
 }
 @media screen and (max-width: 425px) {
   .conteudo-redes-sociais {
-    margin-left: 0;
     width: 100%;
   }
 }
@@ -295,9 +313,16 @@ font-family: 'Satisfy', cursive;*/
 
 .card__giratorio {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   perspective: 1000px;
+}
+@media screen and (max-width: 425px) {
+  .card__giratorio {
+    margin-left: 40px;
+    width: 200px;
+    height: 150px;
+  }
 }
 
 .card__giratorio-conteudo {
@@ -330,19 +355,36 @@ font-family: 'Satisfy', cursive;*/
 }
 
 .card__giratorio-conteudo--frente {
-  background: linear-gradient(-229deg, #0093e9, #80d0c7);
+  background: linear-gradient(-229deg, rgb(181, 23, 23), rgb(230, 212, 212));
 }
 
 .card__giratorio-conteudo--traseira {
-  background: linear-gradient(229deg, #0093e9, #80d0c7);
-  color: white;
+  background: linear-gradient(229deg, rgb(181, 23, 23), rgb(230, 212, 212));
+  color: #fff;
   transform: rotateY(180deg);
 }
 
 .card__giratorio-conteudo--traseira h1,
-.card__giratorio-conteudo--traseira p {
+.card__giratorio-conteudo--traseira p,
+.card__giratorio-conteudo--frente p {
+  padding: 5px;
   margin: 0;
+  color: #000;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 425px) {
+  .card__giratorio-conteudo--traseira h1,
+.card__giratorio-conteudo--traseira p,
+.card__giratorio-conteudo--frente p {
+    padding: 0;
+    font-size: 14px;
+  }
+}
+
+.link-card {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  color: #000;
 }
 
 .card__giratorio-conteudo--traseira h1 {
@@ -350,10 +392,16 @@ font-family: 'Satisfy', cursive;*/
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   filter: drop-shadow(2px 2px 5px black);
-  opacity: 0.7;
+  opacity: 0.9;
+}
+@media screen and (max-width: 425px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .image-logo {
