@@ -196,7 +196,7 @@ font-family: 'Satisfy', cursive;*/
   #section-2 {
     margin-bottom: 40px;
     grid-template-columns: 100%;
-    gap: 20px;
+    gap: 10px;
     grid-template-areas: "item-1" "item-2";
   }
 }
@@ -275,12 +275,14 @@ font-family: 'Satisfy', cursive;*/
 }
 @media screen and (max-width: 768px) {
   .conteudo-redes-sociais {
-    width: 50%;
+    margin-left: 50px;
+    width: 70%;
   }
 }
 @media screen and (max-width: 425px) {
   .conteudo-redes-sociais {
-    width: 100%;
+    margin-left: 20px;
+    width: 80%;
   }
 }
 
@@ -293,7 +295,12 @@ font-family: 'Satisfy', cursive;*/
 .social-media {
   margin-left: 15px;
   margin-bottom: 15px;
-  padding: 5px;
+  padding: 10px;
+  width: 180px;
+  margin-block: 2px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .social-media {
@@ -311,15 +318,59 @@ font-family: 'Satisfy', cursive;*/
   }
 }
 
+.social-media::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.social-media:hover::after {
+  transform: scaleX(1);
+}
+
+.social-media:hover {
+  transform: scale(1.1);
+}
+
 .card__giratorio {
   background-color: transparent;
   width: 400px;
   height: 300px;
   perspective: 1000px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1200px) {
   .card__giratorio {
-    margin-left: 40px;
+    width: 350px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .card__giratorio {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__giratorio {
+    margin-left: 120px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .card__giratorio {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .card__giratorio {
+    margin-left: 50px;
     width: 200px;
     height: 150px;
   }
@@ -372,6 +423,14 @@ font-family: 'Satisfy', cursive;*/
   color: #000;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 940px) {
+  .card__giratorio-conteudo--traseira h1,
+.card__giratorio-conteudo--traseira p,
+.card__giratorio-conteudo--frente p {
+    padding: 1px;
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 425px) {
   .card__giratorio-conteudo--traseira h1,
 .card__giratorio-conteudo--traseira p,
@@ -397,10 +456,22 @@ font-family: 'Satisfy', cursive;*/
   filter: drop-shadow(2px 2px 5px black);
   opacity: 0.9;
 }
+@media screen and (max-width: 940px) {
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+}
 @media screen and (max-width: 425px) {
   .logo {
     width: 60px;
     height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
   }
 }
 
@@ -439,6 +510,10 @@ font-family: 'Satisfy', cursive;*/
 
 .link-hover:hover::after {
   transform: scaleX(1);
+}
+
+.data h4 {
+  font-size: 15px;
 }
 
 .bg-new {

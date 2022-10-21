@@ -183,7 +183,7 @@ font-family: 'Satisfy', cursive;*/
     @media (max-width: 768px) {
       margin-bottom: 40px;
       grid-template-columns: 100%;
-      gap: 20px;
+      gap: 10px;
       grid-template-areas: "item-1" "item-2";
     }
   }
@@ -247,10 +247,12 @@ font-family: 'Satisfy', cursive;*/
     }
 
     @media (max-width: 768px) {
-      width: 50%;
+      margin-left: 50px;
+      width: 70%;
     }
     @media (max-width: 425px) {
-      width: 100%;
+      margin-left: 20px;
+      width: 80%;
     }
   }
 }
@@ -263,7 +265,14 @@ font-family: 'Satisfy', cursive;*/
 .social-media {
   margin-left: 15px;
   margin-bottom: 15px;
-  padding: 5px;
+  padding: 10px;
+  width: 180px;
+  //abaixo efeito risco hover
+  //para criar o efeito hover do risco
+  margin-block: 2px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
   @media screen {
     @media (max-width: 768px) {
       margin-bottom: 10px;
@@ -276,6 +285,29 @@ font-family: 'Satisfy', cursive;*/
     }
   }
 }
+.social-media::after {
+  //para criar o efeito hover do risco
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.social-media:hover::after {
+  //para criar o efeito hover do risco
+  transform: scaleX(1);
+}
+
+.social-media:hover {
+  transform: scale(1.1);
+}
 //fim rede social
 // card giratorio
 .card__giratorio {
@@ -284,8 +316,22 @@ font-family: 'Satisfy', cursive;*/
   height: 300px;
   perspective: 1000px;
   @media screen {
-    @media (max-width: 425px) {
-      margin-left: 40px;
+    @media (max-width: 1200px) {
+      width: 350px;
+      height: 250px;
+    }
+    @media (max-width: 940px) {
+      width: 300px;
+      height: 200px;
+    }
+    @media (max-width: 768px) {
+      margin-left: 120px;
+    }
+    @media (max-width: 560px) {
+      margin-left: 100px;
+    }
+    @media (max-width: 445px) {
+      margin-left: 50px;
       width: 200px;
       height: 150px;
     }
@@ -339,6 +385,10 @@ font-family: 'Satisfy', cursive;*/
   color: #000;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   @media screen {
+    @media (max-width: 940px) {
+      padding: 1px;
+      font-size: 16px;
+    }
     @media (max-width: 425px) {
       padding: 0;
       font-size: 14px;
@@ -362,9 +412,21 @@ font-family: 'Satisfy', cursive;*/
   filter: drop-shadow(2px 2px 5px black);
   opacity: 0.9;
   @media screen {
+    @media (max-width: 940px) {
+      width: 70px;
+      height: 70px;
+    }
     @media (max-width: 425px) {
       width: 60px;
       height: 60px;
+    }
+  }
+}
+
+.mobile {
+  @media screen {
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 }
