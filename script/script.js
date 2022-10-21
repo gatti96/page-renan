@@ -1,18 +1,29 @@
-function setarData() {
-  let elementoData = document.querySelector(".js-data");
+// Função para formatar 1 em 01
+const zeroFill = (n) => {
+  return ("0" + n).slice(-2);
+};
 
-  let data = new Date();
+// Cria intervalo
+const interval = setInterval(() => {
+  // Pega o horário atual
+  const now = new Date();
 
-  const objData = {
-    year: "numeric",
-    month: "long",
-    weekday: "long",
-    day: "numeric",
-  };
+  // Formata a data conforme dd/mm/aaaa hh:ii:ss
+  const dataHora =
+    zeroFill(now.getUTCDate()) +
+    "/" +
+    zeroFill(now.getMonth() + 1) +
+    "/" +
+    now.getFullYear() +
+    " " +
+    zeroFill(now.getHours()) +
+    ":" +
+    zeroFill(now.getMinutes()) +
+    ":" +
+    zeroFill(now.getSeconds());
 
-  elementoData.textContent = data.toLocaleTimeString("pt-BR", objData);
-}
-setarData();
-setInterval(() => {
-  setarData();
+  // Exibe na tela usando a div#data-hora
+  document.getElementById("js-data").innerHTML = dataHora;
 }, 1000);
+
+//fim captura da data
