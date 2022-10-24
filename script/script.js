@@ -43,7 +43,7 @@ function addForm() {
 
   const div2 = document.createElement("div");
   const form = document.createElement("form");
-  form.action = "https://formsubmit.co/renanfrancisco96@gmail.com";
+  form.action = "https://formsubmit.co/61e054950d892dc4d3fd156c48b734d8";
   form.method = "post";
 
   //input name
