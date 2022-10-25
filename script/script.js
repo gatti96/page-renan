@@ -31,6 +31,11 @@ const interval = setInterval(() => {
 function paginaAtual() {
   alert("Página atual!");
 }
+// remover texto da pagina formulário
+
+function removeTextContact() {
+  document.getElementById("contact").style.display = "none";
+}
 
 // abrir formulário
 
@@ -98,7 +103,7 @@ function addForm() {
   const tanks = document.createElement("input");
   tanks.type = "hidden";
   tanks.name = "_next";
-  tanks.value = "https://yourdomain.co/thanks.html";
+  tanks.value = "https://gatti96.github.io/site-renan/pages/thanks.html";
 
   const div7 = document.createElement("div");
   div7.className = "col-12 center";
@@ -111,4 +116,6 @@ function addForm() {
   div.appendChild(h1);
 
   contactSection.append(div, div2);
+
+  removeTextContact();
 }
