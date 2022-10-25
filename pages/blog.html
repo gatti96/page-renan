@@ -23,38 +23,54 @@
       <header>
         <nav class="navbar navbar-expand-lg bg-new">
           <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html"><img src="../img/logo.png" alt="Logo Renan Gatti" title="Logo Renan Gatti" class="d-inline-block align-text-top image-logo"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="Logo Renan Gatti" title="Logo Renan Gatti" class="d-inline-block align-text-top image-logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  <a class="nav-link active link-hover" aria-current="page" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link active " href="./portfolio.html">Portfolio</a>
+                  <a class="nav-link active link-hover" href="./portfolio.html">Projetos</a>
                 </li>                
                 <li class="nav-item">
-                  <a class="nav-link active" href="./contact.html">Contato</a>
+                  <a class="nav-link active link-hover" href="./contact.html" >Contato</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="blog.html">Blog</a>
+                  <a class="nav-link active link-hover" href="#" onclick="paginaAtual()">Blog</a>
                 </li>
             </div>
             
-              <div class="container-fluid ">
-                <span class="navbar-text">
-                  Bem vindos ao meu site!
-                </span>
-              </div>
-            
+            <div class="container-fluid ">
+              <span class="navbar-text">
+                Bem vindos ao meu site!
+              </span>
+            </div>
+            <div class="data container-fluid">
+              <h4 id="js-data"></h4>
+            </div>            
           </div>
         </nav>
       </header> <!--Fim do cabeçalho-->
+
+      <div class="center">
+        <div class="title-blog"><h1>Blog - Terra do Nonno</h1></div>
+        <div><img class="imagem-blog" src="../img/terra-do-nonno.png" alt="Logo terra do nonno"></div>
+        <div class="text-blog">
+          <p>Sou uma pessoa que adora escrever e contar histórias, e foi assim que surgiu o blog Terra do Nonno.</p>
+          <p>Terra do Nonno é um blog que surgiu quando eu ainda estava em busca do reconhecimento da cidadania italiana, e nele passei a escrever sobre como estava sendo cada etapa do processo, mas além disso, passei a compartilhar também dicas e curiosidades.</p>
+          <p>Fique a vontade para acessar o blog também e ler sobre essas histórias</p>
+        </div>
+        <div>
+          <a class="link-blog" href="https://terradononno.blogspot.com/" target="_blank">Acesse o Blog aqui!</a>
+        </div>
+
+      </div>
      
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid blog-footer">
       <!--Inicio rodapé-->
       <footer class="bg-new footer-1 text-center text-lg-start">
         <!-- Copyright -->
@@ -73,5 +89,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>

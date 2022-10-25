@@ -845,6 +845,82 @@ body {
   color: #fff;
 }
 
+.title-blog {
+  background-color: rgb(247, 241, 241);
+  color: #000;
+  padding: 6px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .title-blog h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title-blog h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .title-blog h1 {
+    font-size: 20px;
+  }
+}
+
+.imagem-blog {
+  width: 250px;
+}
+@media screen and (max-width: 768px) {
+  .imagem-blog {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .imagem-blog {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .imagem-blog {
+    width: 150px;
+  }
+}
+
+.text-blog {
+  color: #000;
+  background-color: rgb(247, 241, 241);
+  width: 750px;
+  padding: 8px;
+  text-align: justify;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .text-blog {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .text-blog {
+    width: 85%;
+  }
+}
+
+.link-blog {
+  color: #000;
+  background-color: rgb(247, 241, 241);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.blog-footer {
+  margin-top: 100px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
