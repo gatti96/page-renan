@@ -845,6 +845,28 @@ body {
   color: #fff;
 }
 
+.text-portfolio {
+  background-color: rgb(247, 241, 241);
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  color: #000;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.title-portfolio {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(181, 23, 23);
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
 .title-blog {
   background-color: rgb(247, 241, 241);
   color: #000;
