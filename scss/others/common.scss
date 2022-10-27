@@ -62,3 +62,23 @@
   justify-content: center;
   gap: 15px;
 }
+
+.position-header {
+  display: grid;
+  gap: 100px;
+  grid-template-areas: "data tema";
+}
+
+.data {
+  width: 100px;
+  color: #000;
+}
+
+.theme {
+  font-size: 12px;
+  width: 85px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(46, 42, 42);
+}

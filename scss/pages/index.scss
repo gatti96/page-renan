@@ -7,6 +7,12 @@ font-family: 'Satisfy', cursive;*/
 .my-container {
   background-color: $background-color;
   min-height: 100vh;
+  color: #fff;
+}
+
+.my-container-light {
+  color: #000;
+  background-color: #fff;
 }
 
 .section-index {
@@ -52,7 +58,7 @@ font-family: 'Satisfy', cursive;*/
 
 .text-title {
   margin-top: 38px;
-  color: #fff;
+
   font-size: 80px;
   font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
   @media screen {
@@ -76,7 +82,6 @@ font-family: 'Satisfy', cursive;*/
   border-right: 2px solid rgba(255, 255, 255, 0.75); //cursor da animação
   white-space: nowrap; //não quebrar a linha na animação
   overflow: hidden; //se não tem a largura vai esconder o que esta fora
-  color: #fff;
   width: 300px;
   margin-top: 60px;
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;

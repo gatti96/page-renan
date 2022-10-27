@@ -5,6 +5,12 @@ font-family: 'Satisfy', cursive;*/
 .my-container {
   background-color: #1a1717;
   min-height: 100vh;
+  color: #fff;
+}
+
+.my-container-light {
+  color: #000;
+  background-color: #fff;
 }
 
 .section-index {
@@ -55,7 +61,6 @@ font-family: 'Satisfy', cursive;*/
 
 .text-title {
   margin-top: 38px;
-  color: #fff;
   font-size: 80px;
   font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
 }
@@ -83,7 +88,6 @@ font-family: 'Satisfy', cursive;*/
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  color: #fff;
   width: 300px;
   margin-top: 60px;
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
@@ -666,6 +670,26 @@ img {
   gap: 15px;
 }
 
+.position-header {
+  display: grid;
+  gap: 100px;
+  grid-template-areas: "data tema";
+}
+
+.data {
+  width: 100px;
+  color: #000;
+}
+
+.theme {
+  font-size: 12px;
+  width: 85px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(46, 42, 42);
+}
+
 .text-form {
   color: #000;
   background-color: rgb(247, 241, 241);
@@ -851,6 +875,12 @@ font-family: 'Satisfy', cursive;*/
 .my-container {
   background-color: #1a1717;
   min-height: 100vh;
+  color: #fff;
+}
+
+.my-container-light {
+  color: #000;
+  background-color: #fff;
 }
 
 .section-index {
@@ -901,7 +931,6 @@ font-family: 'Satisfy', cursive;*/
 
 .text-title {
   margin-top: 38px;
-  color: #fff;
   font-size: 80px;
   font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
 }
@@ -929,7 +958,6 @@ font-family: 'Satisfy', cursive;*/
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  color: #fff;
   width: 300px;
   margin-top: 60px;
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
