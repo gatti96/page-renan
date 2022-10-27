@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <!--Bootstrap-->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!--AOS - Animate on scroll library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Css style-->
     <link rel="stylesheet" href="../css/style.css" />
     <title>Renan Gatti - Portfolio</title>
@@ -39,7 +41,7 @@
                   <a class="nav-link active link-hover" href="./contact.html" >Contato</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active link-hover" href="#" >Blog</a>
+                  <a class="nav-link active link-hover" href="./blog.html" >Blog</a>
                 </li>
             </div>
             
@@ -56,19 +58,68 @@
       </header> <!--Fim do cabeçalho-->
 
       <main class="center">
-        <div><h1 class="title-portfolio">Projetos</h1></div>
+        <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="90"><h1 class="title-portfolio">Projetos</h1></div>
         
-        <div><h2 class="text-portfolio">Aqui estão alguns de meus projetos</h2></div>
-        <div><h3 class="text-portfolio">Para consultar os projetos completos acesse meu repositório no GitHub <a target="_blank" href="https://github.com/gatti96?tab=repositories">clicando aqui</a>.</h3></div>
+        <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="90"><h2 class="text-portfolio">Aqui estão alguns de meus projetos</h2></div>
+        <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="90"><h3 class="text-portfolio">Para consultar os projetos completos acesse meu repositório no GitHub <a target="_blank" href="https://github.com/gatti96?tab=repositories">clicando aqui</a>.</h3></div>
         
-        <div class="center projetos"> //inicio projetos
+        <div class="center projetos"> <!--Inicio projetos-->
           <div class="box-portfolio">
-            <div><span>Projeto Cálculo IMC</span></div>
+            <div><span class="box-portfolio-title">Projeto Cálculo IMC</span></div>
             <div>
               <p>O projeto é um site desenvolvido com HTML, CSS e JavaScript que faz o cálculo do IMC do usuário e em seguida informa o resultado na tela.</p>
               <p>
                 Repositório: <a href="https://github.com/gatti96/imc" target="_blank">Link GitHub</a>. <br> 
                 Deploy: <a href="https://gatti96.github.io/imc/" target="_blank">IMC</a>.
+              </p>
+            </div>
+          </div>
+          <div class="box-portfolio">
+            <div><span class="box-portfolio-title">Projeto The Universe</span></div>
+            <div>
+              <p>Este projeto é um site desenvolvido com HTML, CSS,  Bootstrap e a biblioteca CSS AOS (Animate On Scroll Library). <br>
+              The Universe é um site fictício desenvolvido como forma de aprendizado e que traz curiosidades e informações sobre assuntos relacionados ao universo.</p>
+              <p>
+                Repositório: <a href="https://github.com/gatti96/the-universe" target="_blank">Link GitHub</a>. <br> 
+                Deploy: <a href="https://gatti96.github.io/the-universe/" target="_blank">The Universe</a>.
+              </p>
+            </div>
+          </div>
+          <div class="box-portfolio">
+            <div><span class="box-portfolio-title">Projeto Voar Agora</span></div>
+            <div>
+              <p>Este projeto é um site desenvolvido com HTML, CSS. <br>
+                Voar Agora foi um dos primeiros sites que desenvolvi, apenas com um conhecimento inicial de HTML e CSS. <br>
+                A princípio ele foi feito sua organização usando somente margin e sem nenhuma responsividade e após adquirir novos conhecimentos em CSS atualizei o projeto, agora utilizando Flex Box e Grid para melhor organização do site, assim como, também foi feita a responsividade.
+              </p>
+              <p>
+                Repositório: <a href="https://github.com/gatti96/project-voar-agora" target="_blank">Link GitHub</a>. <br> 
+                Deploy: <a href="https://gatti96.github.io/project-voar-agora/" target="_blank">Voar Agora</a>.
+              </p>
+            </div>
+          </div>
+          <div class="box-portfolio">
+            <div><span class="box-portfolio-title">Projeto Vida Corrida</span></div>
+            <div>
+              <p>Este projeto é um site desenvolvido com HTML, CSS e Sass <br>
+                Vida Corrida também foi um dos primeiros sites que desenvolvi.<br>
+                A princípio ele foi feito sua organização usando somente margin e sem nenhuma responsividade e após adquirir novos conhecimentos em CSS atualizei o projeto, agora utilizando Flex Box e Grid para melhor organização do site, assim como, também foi feita a responsividade.
+              </p>
+              <p>
+                Repositório: <a href="https://github.com/gatti96/vida-corrida" target="_blank">Link GitHub</a>. <br> 
+                Deploy: <a href="https://gatti96.github.io/vida-corrida/" target="_blank">Vida Corrida</a>.
+              </p>
+            </div>
+          </div>
+          <div class="box-portfolio">
+            <div><span class="box-portfolio-title">Parallax</span></div>
+            <div>
+              <p>Este projeto desenvolvido somente para praticar o efeito parallax com as imagens.<br>
+                 
+              </p>
+              <p>
+                Repositório: <a href="https://github.com/gatti96/parallax" target="_blank">Link GitHub</a>. <br> 
+                Deploy: <a href="https://gatti96.github.io/parallax/" target="_blank">Parallax</a>.
               </p>
             </div>
           </div>
@@ -96,6 +147,11 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+     <!--AOS - Animate on scroll library-->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
     <script src="../script/script.js"></script>
   </body>
 </html>
