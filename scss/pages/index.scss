@@ -7,12 +7,21 @@ font-family: 'Satisfy', cursive;*/
 .my-container {
   background-color: $background-color;
   min-height: 100vh;
+  color: #fff;
+}
+
+.my-container-light {
+  color: #000;
+  background-color: #fff;
 }
 
 .section-index {
   margin-top: 110px;
   margin-bottom: 50px;
   @media screen {
+    @media (max-width: 993px) {
+      margin-top: 30px;
+    }
     @media (max-width: 320px) {
       margin-top: 80px;
     }
@@ -26,6 +35,10 @@ font-family: 'Satisfy', cursive;*/
   overflow: hidden;
   position: relative;
   @media screen {
+    @media (max-width: 993px) {
+      width: 200px;
+      height: 200px;
+    }
     @media (max-width: 768px) {
       width: 190px;
       height: 190px;
@@ -52,12 +65,16 @@ font-family: 'Satisfy', cursive;*/
 
 .text-title {
   margin-top: 38px;
-  color: #fff;
+
   font-size: 80px;
   font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
   @media screen {
+    @media (max-width: 993px) {
+      margin-top: 20px;
+      font-size: 70px;
+    }
     @media (max-width: 645px) {
-      font-size: 65px;
+      font-size: 55px;
       text-align: center;
     }
     @media (max-width: 425px) {
@@ -76,13 +93,12 @@ font-family: 'Satisfy', cursive;*/
   border-right: 2px solid rgba(255, 255, 255, 0.75); //cursor da animação
   white-space: nowrap; //não quebrar a linha na animação
   overflow: hidden; //se não tem a largura vai esconder o que esta fora
-  color: #fff;
   width: 300px;
   margin-top: 60px;
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
   @media screen {
-    @media (max-width: 645px) {
-      font-size: 30px;
+    @media (max-width: 992px) {
+      font-size: 26pxpx;
     }
     @media (max-width: 425px) {
       font-size: 25px;

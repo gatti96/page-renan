@@ -119,3 +119,10 @@ function addForm() {
 
   removeTextContact();
 }
+
+function switchTheme() {
+  document.body.classList.toggle("my-container");
+  document.body.classList.toggle("my-container-light");
+} // alterar a cor do tema
+
+document.getElementById("theme").addEventListener("click", switchTheme); // ao clicar aciona a troca do tema

@@ -5,11 +5,22 @@ font-family: 'Satisfy', cursive;*/
 .my-container {
   background-color: #1a1717;
   min-height: 100vh;
+  color: #fff;
+}
+
+.my-container-light {
+  color: #000;
+  background-color: #fff;
 }
 
 .section-index {
   margin-top: 110px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 993px) {
+  .section-index {
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 320px) {
   .section-index {
@@ -23,6 +34,12 @@ font-family: 'Satisfy', cursive;*/
   height: 250px;
   overflow: hidden;
   position: relative;
+}
+@media screen and (max-width: 993px) {
+  .imagem-index {
+    width: 200px;
+    height: 200px;
+  }
 }
 @media screen and (max-width: 768px) {
   .imagem-index {
@@ -55,13 +72,18 @@ font-family: 'Satisfy', cursive;*/
 
 .text-title {
   margin-top: 38px;
-  color: #fff;
   font-size: 80px;
   font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
 }
+@media screen and (max-width: 993px) {
+  .text-title {
+    margin-top: 20px;
+    font-size: 70px;
+  }
+}
 @media screen and (max-width: 645px) {
   .text-title {
-    font-size: 65px;
+    font-size: 55px;
     text-align: center;
   }
 }
@@ -83,14 +105,13 @@ font-family: 'Satisfy', cursive;*/
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  color: #fff;
   width: 300px;
   margin-top: 60px;
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 992px) {
   .sub-title {
-    font-size: 30px;
+    font-size: 26pxpx;
   }
 }
 @media screen and (max-width: 425px) {
@@ -608,7 +629,12 @@ img {
   height: 60px;
   filter: drop-shadow(2px 2px 5px black);
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
+  .image-logo {
+    width: 230px;
+  }
+}
+@media screen and (max-width: 993px) {
   .image-logo {
     width: 50px;
   }
@@ -664,6 +690,60 @@ img {
   align-items: center;
   justify-content: center;
   gap: 15px;
+}
+
+.position-header {
+  display: grid;
+  gap: 100px;
+  grid-template-areas: "data tema";
+}
+@media screen and (max-width: 991px) {
+  .position-header {
+    gap: 10px;
+  }
+}
+
+.data {
+  width: 100px;
+  color: #000;
+}
+
+.theme {
+  font-size: 12px;
+  width: 85px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(46, 42, 42);
+}
+@media screen and (max-width: 768px) {
+  .theme {
+    width: 80px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .theme {
+    width: 75px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .theme {
+    width: 70px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .theme {
+    width: 70px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+
+.container-contact {
+  min-height: 100vh;
 }
 
 .text-form {
@@ -743,7 +823,7 @@ img {
 }
 
 .color-submit {
-  background-color: #fff;
+  background-color: rgb(181, 23, 23);
   color: #000;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -851,11 +931,22 @@ font-family: 'Satisfy', cursive;*/
 .my-container {
   background-color: #1a1717;
   min-height: 100vh;
+  color: #fff;
+}
+
+.my-container-light {
+  color: #000;
+  background-color: #fff;
 }
 
 .section-index {
   margin-top: 110px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 993px) {
+  .section-index {
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 320px) {
   .section-index {
@@ -869,6 +960,12 @@ font-family: 'Satisfy', cursive;*/
   height: 250px;
   overflow: hidden;
   position: relative;
+}
+@media screen and (max-width: 993px) {
+  .imagem-index {
+    width: 200px;
+    height: 200px;
+  }
 }
 @media screen and (max-width: 768px) {
   .imagem-index {
@@ -901,13 +998,18 @@ font-family: 'Satisfy', cursive;*/
 
 .text-title {
   margin-top: 38px;
-  color: #fff;
   font-size: 80px;
   font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
 }
+@media screen and (max-width: 993px) {
+  .text-title {
+    margin-top: 20px;
+    font-size: 70px;
+  }
+}
 @media screen and (max-width: 645px) {
   .text-title {
-    font-size: 65px;
+    font-size: 55px;
     text-align: center;
   }
 }
@@ -929,14 +1031,13 @@ font-family: 'Satisfy', cursive;*/
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  color: #fff;
   width: 300px;
   margin-top: 60px;
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 992px) {
   .sub-title {
-    font-size: 30px;
+    font-size: 26pxpx;
   }
 }
 @media screen and (max-width: 425px) {
