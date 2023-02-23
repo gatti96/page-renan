@@ -1,8 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Menu from "./component/menu.js";
+import "./component/scss/index.scss";
 
 function App() {
-  return <div></div>;
+  return (
+    <>
+      <div>
+        <Menu />
+      </div>
+      ;
+    </>
+  );
 }
 
 export default App;
